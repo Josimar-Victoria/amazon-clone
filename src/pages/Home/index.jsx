@@ -18,7 +18,7 @@ export default function Home() {
           image="https://inducol.com.co/wp-content/uploads/2021/03/Lavadora-Inducol-Semiautomatica-7kg-06.jpg"
         />
         <Product
-          id="1231"
+          id="12313"
           title="lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam"
           price={11.49}
           rating={5}
@@ -27,21 +27,21 @@ export default function Home() {
       </div>
       <div className="home__row">
         <Product
-          id="1231"
+          id="123134"
           title="lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam"
           price={11.49}
           rating={5}
           image="https://inducol.com.co/wp-content/uploads/2021/03/Lavadora-Inducol-Semiautomatica-7kg-06.jpg"
         />
         <Product
-          id="1231"
+          id="123121"
           title="lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam"
           price={11.49}
           rating={5}
           image="https://inducol.com.co/wp-content/uploads/2021/03/Lavadora-Inducol-Semiautomatica-7kg-06.jpg"
         />
         <Product
-          id="1231"
+          id="123179"
           title="lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam"
           price={11.49}
           rating={5}
@@ -50,7 +50,7 @@ export default function Home() {
       </div>
       <div className="home__row">
         <Product
-          id="1231"
+          id="1231086"
           title="lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam"
           price={11.49}
           rating={5}
