@@ -1,6 +1,23 @@
 import React from "react";
-import './styles.css'
+import { actionTypes } from "../../reducer";
+import { useStateValue } from "../../StateProvider";
+import "./styles.css";
 export default function Product({ image, title, id, price, rating }) {
+  const [{ basket }, dispatch] = useStateValue();
+
+  const addToBasket = () => {
+    dispatch({
+      type: actionTypes.ADD_TO_BASKET,
+      item: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+      },
+    });
+  };
+
   return (
     <div className="product">
       <div className="product__info">
@@ -19,7 +36,7 @@ export default function Product({ image, title, id, price, rating }) {
       </div>
 
       <img src={image} alt="img" />
-      <button>Agregar</button>
+      <button onClick={addToBasket}>Agregar</button>
     </div>
   );
 }
