@@ -1,0 +1,67 @@
+.login {
+  display: flex;
+
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.login__logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+  object-fit: contain;
+}
+.login__conatiner {
+  width: 300px !important;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+.login__conatiner > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.login__conatiner > form > h3 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.login__conatiner > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+  outline: none;
+}
+.login__conatiner > form > button {
+  background: #f0c14b;
+  height: 30px;
+  border: 1px solid;
+  width: 100%;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  cursor: pointer;
+}
+.login__conatiner > p {
+  margin-top: 15px;
+  font-size: 12px;
+}
+.login__registerButton {
+  background: #f0c14b;
+  height: 30px;
+  border: 1px solid;
+  width: 100%;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  cursor: pointer;
+}

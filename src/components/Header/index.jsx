@@ -1,12 +1,18 @@
 import { Search, ShoppingBasket } from "@material-ui/icons";
 import React from "react";
 import { Link } from "react-router-dom";
+import { auth } from "../../firebase";
 import { useStateValue } from "../../StateProvider";
 import HeaderButtom from "./HeaderButtom";
 import "./styles.css";
 export default function Header() {
-  const [{ basket }] = useStateValue();
-  console.log('===>',basket)
+  const [{ basket, user }] = useStateValue();
+  console.log("===>", basket);
+  const handleLogin = (e) => {
+    if (user) {
+      auth.signOut();
+    }
+  };
   return (
     <header className="header">
       <nav className="nav">
@@ -22,7 +28,15 @@ export default function Header() {
           <Search className="header__searchIcon" />
         </div>
         <div className="header__nav">
-          <HeaderButtom LineOne="Hello qazi" LineTwo="Sign In" />
+          <Link to={!user && "/login"} className="header__link">
+            <div onClick={handleLogin} className="header__option">
+              <span className="header__optionLineOne">{user?.email}</span>
+              <span className="header__optionLineTwo">
+                {user ? "Sign Out" : "Sign In"}
+              </span>
+            </div>
+          </Link>
+
           <HeaderButtom LineOne="Returns" LineTwo="& Orders" />
           <HeaderButtom LineOne="Your" LineTwo="Prime" />
 
